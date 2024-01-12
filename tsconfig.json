@@ -13,7 +13,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+<<<<<<< HEAD
     "allowJs": true,
+=======
+
+>>>>>>> 3895b06 (app)
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

@@ -31,7 +31,11 @@ body {
 }
 
 h1 {
+<<<<<<< HEAD
   font-size: 1.8em;
+=======
+  font-size: 3.2em;
+>>>>>>> 3895b06 (app)
   line-height: 1.1;
 }
 
