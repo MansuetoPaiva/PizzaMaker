@@ -30,27 +30,24 @@ import './App.css'
 import { useState } from "react";
 
 import "./App.css";
-import { Header } from "./components/Header";
-import { ImgClient } from "./components/ImgClient";
-import { OpcoesMassa } from "./components/OpcoesMassa";
-import { OpcoesMolho } from "./components/OpcoesMolho";
-import { OpcoesTipo } from "./components/OpcoesTipo";
+
 import { PizzaScreen } from "./components/PizzaScreen";
+import { MakerScreen } from "./components/MakerScreen";
 
 const initState = { 
   borda: "fina", 
-  molho: "amarelo", 
+  molho: "vermelho", 
   tipo: ["verdura", "carne"] 
 };
 >>>>>>> 9f0f9db (modificaçoes)
 
 function App() {
   const [state, _setState] = useState(initState);
-
-  // setState({ borda: "", molho: "", tipo: [] }); //certa
+  const [isMakerVisible, setIsMakerVisible] = useState(true);
 
   return (
     <>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 export default App
@@ -76,3 +73,17 @@ export default App
   }
   export default App;
 >>>>>>> 9f0f9db (modificaçoes)
+=======
+      { isMakerVisible ? 
+        <MakerScreen onChange={_setState} submit={() => setIsMakerVisible(false)} /> :
+        <PizzaScreen molho={state.molho} borda={state.borda} tipos={state.tipo} />
+      }
+      {
+        !isMakerVisible && <button onClick={() => setIsMakerVisible(true)}> ⬅️ </button> 
+      }
+    </>
+  );
+}
+
+export default App;
+>>>>>>> 911a77e (alteraçoes)
