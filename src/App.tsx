@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useState } from "react";
 
 import "./App.css";
@@ -25,35 +26,53 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+=======
+import { useState } from "react";
+
+import "./App.css";
+import { Header } from "./components/Header";
+import { ImgClient } from "./components/ImgClient";
+import { OpcoesMassa } from "./components/OpcoesMassa";
+import { OpcoesMolho } from "./components/OpcoesMolho";
+import { OpcoesTipo } from "./components/OpcoesTipo";
+import { PizzaScreen } from "./components/PizzaScreen";
+
+const initState = { 
+  borda: "fina", 
+  molho: "amarelo", 
+  tipo: ["verdura", "carne"] 
+};
+>>>>>>> 9f0f9db (modificaçoes)
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [state, _setState] = useState(initState);
+
+  // setState({ borda: "", molho: "", tipo: [] }); //certa
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
+<<<<<<< HEAD
 export default App
 >>>>>>> 3895b06 (app)
+=======
+{/* <div id="screenMaker">
+        <Header />
+        <div className="row">
+          <OpcoesMassa />
+          <OpcoesMolho />
+        </div>
+        <div className="row">
+          <OpcoesTipo />
+          <ImgClient />
+        </div>
+        <footer>
+          <button className="hidden"> ➡️ </button>
+        </footer>
+      </div> */}
+<PizzaScreen molho={state.molho} borda={state.borda} tipos={state.tipo} />
+    </>
+   );
+  }
+  export default App;
+>>>>>>> 9f0f9db (modificaçoes)
