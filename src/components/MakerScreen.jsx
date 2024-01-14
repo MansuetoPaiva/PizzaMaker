@@ -28,6 +28,7 @@ export function MakerScreen({onChange}) {
     onChange((atual) => ({...atual, molho: molho}));
   };
 
+<<<<<<< HEAD
   /**
    * @param {['carne', 'verdura', boolean]} param 
    */
@@ -47,6 +48,11 @@ export function MakerScreen({onChange}) {
       }
       return ({...atual, tipos: newvalue})
     });
+=======
+  const changeTipo = (value) => {
+    //const tipo = ['carne'];
+    onChange((atual) => ({...atual, tipo: value}));
+>>>>>>> f83db7d (atualizacao de codigo)
   };
 
   

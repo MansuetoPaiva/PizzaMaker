@@ -42,8 +42,8 @@ export function OpcoesTipo() {
       <section>
         <h2>Tipo:</h2>
         <ul>
-          <CheckOption id="1" label="Verdura"/>
-          <CheckOption id="2" label="Carne"/>
+          <CheckOption onCheck={() => onTipo('verdura')} id="1" label="Verdura"/>
+          <CheckOption onCheck={() => onTipo('carne')} id="2" label="Carne"/>
         </ul>
       </section>
     );
@@ -52,7 +52,11 @@ export function OpcoesTipo() {
   function CheckOption({id, label}){
     return (
       <li>
-        <input type="checkbox" id={"checkbox" + id} name="recheio" value={label.toLowerCase()} />
+        <input type="checkbox" 
+        id={"checkbox" + id} 
+        name="recheio" 
+        value={label.toLowerCase()}
+        onClick={onCheck} />
         <label htmlFor={"checkbox"+id}>{label}</label>
       </li>
     )
