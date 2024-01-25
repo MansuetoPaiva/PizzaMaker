@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 export function OpcoesMassa({onMassa}) {
   
   return (
@@ -31,11 +29,8 @@ function OpcaoMassa({ id, value, onCheck }) {
     </li>
   );
 }
-=======
 export function OpcoesMassa() {
-=======
 export function OpcoesMassa({onMassa}) {
->>>>>>> 911a77e (alteraçoes)
   
     return (
       <section>
@@ -66,4 +61,3 @@ export function OpcoesMassa({onMassa}) {
       </li>
     );
   }
->>>>>>> 9f0f9db (modificaçoes)
