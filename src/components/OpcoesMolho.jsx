@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /**
  * @typedef {import('../state').State['molho']} Molho
  *
@@ -40,11 +38,7 @@ function Opcao({ id, value, onChange }) {
         name="molho"
         value={value}
       />
-=======
-export function OpcoesMolho() {
-=======
 export function OpcoesMolho({onMolho}) {
->>>>>>> 911a77e (alteraçoes)
     return (
       <section>
         <h2>Molho:</h2>
@@ -62,25 +56,19 @@ export function OpcoesMolho({onMolho}) {
     
     return (
       <li>
-<<<<<<< HEAD
+
       <input type="radio" id={"radio" + value} name="molho" value={value} />
->>>>>>> 9f0f9db (modificaçoes)
-=======
+
       <input 
       type="radio" 
       id={"radio" + value} 
       name="molho" 
       value={value} 
       onClick={onCheck}/>
->>>>>>> 911a77e (alteraçoes)
+
       <label htmlFor={"radio" + value}>
         <img className="img-icon" src={url} alt={"molho " + value} />
       </label>
     </li>
-<<<<<<< HEAD
   );
 }
-=======
-    )
-  }
->>>>>>> 9f0f9db (modificaçoes)
